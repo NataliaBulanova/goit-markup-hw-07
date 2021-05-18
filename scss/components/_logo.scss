@@ -1,0 +1,19 @@
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15;
+  color: var(--accent-color);
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.header__logo--color {
+  color: var(--logo-text-color);
+}
+
+.footer__logo--color {
+  color: var(--white-text-color);
+}

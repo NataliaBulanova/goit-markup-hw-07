@@ -1,0 +1,37 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+@import "./base/container";
+@import "./base/common";
+@import "./base/title";
+
+@import "./components/logo";
+@import "./components/btn";
+@import "./components/form";
+@import "./components/modal";
+
+@import "./layouts/sections";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/advantages";
+@import "./layouts/services";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./layouts/filters";
+@import "./layouts/portfolio";
+  
+  // .content-box {
+  //   flex-basis: calc((100% - 4 * 30px) / 4);
+  // }
+  
+  // .social-item {
+  //   margin-top: 0px;
+  //   margin-left: 0px;
+  // }
+  
+  
+  
+  
+  
