@@ -24,12 +24,9 @@
   &:hover,
   &:focus {
   color: var(--accent-color);
+  }
 }
 
-}
-.footer__logo {
-  margin-bottom: 20px;
-}
 .footer-contacts__item {
   margin-bottom: 9px;
   font-style: normal;
@@ -40,20 +37,13 @@
   color: var(--white-text-color);
   text-decoration-line: none;
 }
-.footer__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-text-color);
-  margin-bottom: 20px;
-}
+
 .footer__social-item:not(:last-child) {
   margin-right: 10px;
 }
+
 .footer__social-link {
-  @extend %social-link;
+  @extend %socialLink;
 
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--transition-param);
@@ -67,13 +57,16 @@
 .footer__icon {
   fill: var(--white-text-color);
 }
+
 .footer-form__item {
   flex-basis: calc((100% - 2 * 30px) / 2);
 }
+
 .footer-form__flexbox {
   display: flex;
   flex-direction: row;
 }
+
 .footer__input {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);

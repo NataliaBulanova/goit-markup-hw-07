@@ -12,13 +12,6 @@
     @extend %item;
     flex-basis: calc((100% - 3 * 30px) / 3);
   }
-  .portfolio__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--tittle-text-color);
-  }
   .portfolio__text {
     margin-top: 4px;
     font-weight: 400;
@@ -41,7 +34,7 @@
       height: 100%;
       background-color: rgba(33, 150, 243, 0.9);
       transition: transform var(--transition-param);
-      transform: translateY(100%);
+      transform: translateY(101%);
     }
   }
   

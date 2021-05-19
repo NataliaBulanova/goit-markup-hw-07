@@ -5,3 +5,9 @@
     margin-left: auto;
     margin-right: auto;
   }  
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

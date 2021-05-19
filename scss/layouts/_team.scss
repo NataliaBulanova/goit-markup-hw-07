@@ -47,7 +47,7 @@
 }
 
 .team-social__link {
-  @extend %social-link;
+  @extend %socialLink;
   
   &:hover .team-social__icon,
   &:focus .team-social__icon {
