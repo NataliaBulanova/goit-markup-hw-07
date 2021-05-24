@@ -58,8 +58,50 @@
             >
           </li>
         </ul>
+        <button class="mobile-menu__btn" data-menu-button>
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use class="menu-btn__icon-open" href="./images/sprite.svg#icon-menu"></use>
+            <use class="menu-btn__icon-close" href="./images/sprite.svg#icon-close-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <div class="mobile-menu" data-menu>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a
+            class="mobile-menu__link"
+            href="./index.html"
+            >Студия</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="">Контакты</a>
+        </li>
+      </ul>
+      </nav>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__tel" href="tel:+380961111111">
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__mail" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__social-list">
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="">Instagram</a></li>
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="">Twitter</a></li>
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="">Facebook</a></li>
+        <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="">Linkedin</a></li>
+      </ul>
+    </div>
     <main>
       <!--Section Hero-->
       <section class="hero">
@@ -133,12 +175,22 @@
           <ul class="services__list">
             <li class="services__item">
               <div class="services__thumb">
-                <img
-                  src="./images/typing_code.jpg"
+                <picture>
+                  <source srcset="./images/desktop/services/box-1.webp 1x, ./images/desktop/services/box-1@2x.webp 2x" 
+                  media="(min-width: 1200px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/desktop/services/box-1.jpg 1x, ./images/desktop/services/box-1@2x.jpg 2x" 
+                  media="(min-width: 1200px)" 
+                  type="image/jpeg" 
+                  />
+                  <img
+                  class="img"
+                  src="./images/desktop/services/box-1.jpg"
                   alt="Лаптоп с кодом"
-                  width="370"
+                  width="370" height="294"
                 />
-
+                </picture>
                 <div class="servises__overlay">
                   <h3 class="servises__text">Десктопные приложения</h3>
                 </div>
@@ -146,11 +198,22 @@
             </li>
             <li class="services__item">
               <div class="services__thumb">
-                <img
-                  src="./images/smartphone.jpg"
+                <picture>
+                  <source srcset="./images/desktop/services/box-2.webp 1x, ./images/desktop/services/box-2@2x.webp 2x" 
+                  media="(min-width: 1200px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/desktop/services/box-2.jpg 1x, ./images/desktop/services/box-2@2x.jpg 2x" 
+                  media="(min-width: 1200px)" 
+                  type="image/jpeg" 
+                  />
+                  <img
+                  class="img"
+                  src="./images/desktop/services/box-2.jpg"
                   alt="Разработка приложения для смартфонов"
-                  width="370"
+                  width="370" height="294"
                 />
+                </picture>
                 <div class="servises__overlay">
                   <h3 class="servises__text">Мобильные приложения</h3>
                 </div>
@@ -158,11 +221,22 @@
             </li>
             <li class="services__item">
               <div class="services__thumb">
-                <img
-                  src="./images/design.jpg"
+                <picture>
+                  <source srcset="./images/desktop/services/box-3.webp 1x, ./images/desktop/services/box-3@2x.webp 2x" 
+                  media="(min-width: 1200px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/desktop/services/box-3.jpg 1x, ./images/desktop/services/box-3@2x.jpg 2x" 
+                  media="(min-width: 1200px)" 
+                  type="image/jpeg" 
+                  />
+                  <img
+                  class="img"
+                  src="./images/desktop/services/box-3.jpg"
                   alt="Лаптоп с цветовым кругом"
-                  width="370"
+                  width="370" height="294"
                 />
+                </picture>
                 <div class="servises__overlay">
                   <h3 class="servises__text">Дизайнерские решения</h3>
                 </div>
@@ -178,12 +252,38 @@
           <ul class="team__list">
             <li class="team__item">
               <div class="team__thumb">
-                <img
-                  class="img"
-                  src="./images/Ihor_Demjanenko.jpg"
+                <picture>
+                  <source srcset="./images/desktop/team/ourteam-1.webp 1x, ./images/desktop/team/ourteam-1@2x.webp 2x" 
+                  media="(min-width: 1200px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/desktop/team/ourteam-1.jpg 1x, ./images/desktop/team/ourteam-1@2x.jpg 2x" 
+                  media="(min-width: 1200px)" 
+                  type="image/jpeg" 
+                  />
+                  <source srcset="./images/tablet/team/ourteam-1.webp 1x, ./images/tablet/team/ourteam-1@2x.webp 2x" 
+                  media="(min-width: 768px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/tablet/team/ourteam-1.jpg 1x, ./images/tablet/team/ourteam-1@2x.jpg 2x" 
+                  media="(min-width: 768px)" 
+                  type="image/jpeg" 
+                  />
+                  <source srcset="./images/mobile/team/ourteam-1.webp 1x, ./images/mobile/team/ourteam-1@2x.webp 2x" 
+                  media="(min-width: 767.98px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/mobile/team/ourteam-1.jpg 1x, ./images/mobile/team/ourteam-1@2x.jpg 2x" 
+                  media="(min-width: 767.98px)" 
+                  type="image/jpeg" 
+                  />
+                  <img
+                  class="img team__img"
+                  src="./images/mobile/team/ourteam-1.jpg"
                   alt="Ihor Demjanenko Product Designer"
-                  width="270"
+                  width="450" height="460"
                 />
+                </picture>
               </div>
               <div class="team__box">
                 <h3 class="team__names">Игорь Демьяненко</h3>
@@ -242,12 +342,38 @@
             </li>
             <li class="team__item">
               <div class="team__thumb">
-                <img
-                  class="img"
-                  src="./images/Olga_Repina.jpg"
+                <picture>
+                  <source srcset="./images/desktop/team/ourteam-2.webp 1x, ./images/desktop/team/ourteam-2@2x.webp 2x" 
+                  media="(min-width: 767.98px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/desktop/team/ourteam-2.jpg 1x, ./images/desktop/team/ourteam-2@2x.jpg 2x" 
+                  media="(min-width: 1200px)" 
+                  type="image/jpeg" 
+                  />
+                  <source srcset="./images/tablet/team/ourteam-2.webp 1x, ./images/tablet/team/ourteam-2@2x.webp 2x" 
+                  media="(min-width: 767.98px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/tablet/team/ourteam-2.jpg 1x, ./images/tablet/team/ourteam-2@2x.jpg 2x" 
+                  media="(min-width: 768px)" 
+                  type="image/jpeg" 
+                  />
+                  <source srcset="./images/mobile/team/ourteam-2.webp 1x, ./images/mobile/team/ourteam-2@2x.webp 2x" 
+                  media="(min-width: 767.98px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/mobile/team/ourteam-2.jpg 1x, ./images/mobile/team/ourteam-2@2x.jpg 2x" 
+                  media="(min-width: 767.98px)" 
+                  type="image/jpeg" 
+                  />
+                  <img
+                  class="img team__img"
+                  src="./images/mobile/team/ourteam-2.jpg"
                   alt="Olga Repina Frontend Developer"
-                  width="270"
+                  width="450" height="460"
                 />
+                </picture>
               </div>
               <div class="team__box">
                 <h3 class="team__names">Ольга Репина</h3>
@@ -306,12 +432,38 @@
             </li>
             <li class="team__item">
               <div class="team__thumb">
-                <img
-                  class="img"
-                  src="./images/Nikolaj_Tarasov.jpg"
+                <picture>
+                  <source srcset="./images/desktop/team/ourteam-3.webp 1x, ./images/desktop/team/ourteam-3@2x.webp 2x" 
+                  media="(min-width: 767.98px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/desktop/team/ourteam-3.jpg 1x, ./images/desktop/team/ourteam-3@2x.jpg 2x" 
+                  media="(min-width: 1200px)" 
+                  type="image/jpeg" 
+                  />
+                  <source srcset="./images/tablet/team/ourteam-3.webp 1x, ./images/tablet/team/ourteam-3@2x.webp 2x" 
+                  media="(min-width: 767.98px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/tablet/team/ourteam-3.jpg 1x, ./images/tablet/team/ourteam-3@2x.jpg 2x" 
+                  media="(min-width: 768px)" 
+                  type="image/jpeg" 
+                  />
+                  <source srcset="./images/mobile/team/ourteam-3.webp 1x, ./images/mobile/team/ourteam-3@2x.webp 2x" 
+                  media="(min-width: 767.98px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/mobile/team/ourteam-3.jpg 1x, ./images/mobile/team/ourteam-3@2x.jpg 2x" 
+                  media="(min-width: 767.98px)" 
+                  type="image/jpeg" 
+                  />
+                  <img
+                  class="img team__img"
+                  src="./images/mobile/team/ourteam-3.jpg"
                   alt="Nikolaj Tarasov Marketing"
-                  width="270"
+                  width="450" height="460"
                 />
+                </picture>
               </div>
               <div class="team__box">
                 <h3 class="team__names">Николай Тарасов</h3>
@@ -370,12 +522,38 @@
             </li>
             <li class="team__item">
               <div class="team__thumb">
-                <img
-                  class="img"
-                  src="./images/Mikhaik_Yermakov.jpg"
+                <picture>
+                  <source srcset="./images/desktop/team/ourteam-4.webp 1x, ./images/desktop/team/ourteam-4@2x.webp 2x" 
+                  media="(min-width: 767.98px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/desktop/team/ourteam-4.jpg 1x, ./images/desktop/team/ourteam-4@2x.jpg 2x" 
+                  media="(min-width: 1200px)" 
+                  type="image/jpeg" 
+                  />
+                  <source srcset="./images/tablet/team/ourteam-4.webp 1x, ./images/tablet/team/ourteam-4@2x.webp 2x" 
+                  media="(min-width: 767.98px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/tablet/team/ourteam-4.jpg 1x, ./images/tablet/team/ourteam-4@2x.jpg 2x" 
+                  media="(min-width: 768px)" 
+                  type="image/jpeg" 
+                  />
+                  <source srcset="./images/mobile/team/ourteam-4.webp 1x, ./images/mobile/team/ourteam-4@2x.webp 2x" 
+                  media="(min-width: 767.98px)"
+                  type="image/webp" 
+                  />
+                  <source srcset="./images/mobile/team/ourteam-4.jpg 1x, ./images/mobile/team/ourteam-4@2x.jpg 2x" 
+                  media="(min-width: 767.98px)" 
+                  type="image/jpeg" 
+                  />
+                  <img
+                  class="img team__img"
+                  src="./images/mobile/team/ourteam-4.jpg"
                   alt="Mikhail Yermakov UI Designer"
-                  width="270"
+                  width="450" height="460"
                 />
+                </picture>
               </div>
               <div class="team__box">
                 <h3 class="team__names">Михаил Ермаков</h3>
@@ -538,7 +716,7 @@
         </div>
         <div class="footer__content-box footer__flexbox">
           <h3 class="footer__title">Присоединяйтесь</h3>
-          <ul class="list">
+          <ul class="list footer__social-list">
             <li class="footer__social-item">
               <a
                 href=""
@@ -593,7 +771,7 @@
             <p class="footer__title">Подпишитесь на рассылку</p>
             <div class="footer-form__flexbox">
               <input class="footer__input" id="footer-mail" type="email" name="email" placeholder="E-mail">
-                <button class="btn" type="submit">
+                <button class="btn footer-form__btn" type="submit">
                   Подписаться
                   <svg class="footer__icon btn__icon-send" width="24px" height="24px">
                     <use href="./images/sprite.svg#icon-send"></use>
@@ -610,7 +788,7 @@
           </svg>
         </button>
         <form class="form">
-          <p class="legend">Оставьте свои данные, мы вам перезвоним</p>
+          <p class="form__legend">Оставьте свои данные, мы вам перезвоним</p>
           <label class="form__field">
             <span class="form__label">Имя</span>
             <input class="form__input" type="text" name="username" autofocus />
@@ -647,10 +825,7 @@
               type="checkbox"
               name="checkbox"
               value="agree"
-            />
-            <!-- <svg class="checkbox-icon" width="16px" height="15px">
-                <use href="./images/sprite.svg#icon-check"></use>
-              </svg> -->
+            /> 
             <span class="checkbox__icon"></span>
             <span class="checkbox__text"
               >Соглашаюсь с рассылкой и принимаю<a
@@ -664,6 +839,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> 
+    <script src="./js/menu.js"></script>
   </body>
 </html>

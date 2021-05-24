@@ -3,7 +3,11 @@
     align-items: center;
   
     &__list {
-      display: flex;
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+      }
     }
   
     &__item:not(:last-child) {
@@ -22,10 +26,7 @@
       cursor: pointer;
       transition: color var(--transition-param);
   
-      &:hover {
-        color: var(--accent-color);
-      }
-  
+      &:hover,
       &:focus {
         color: var(--accent-color);
       }

@@ -46,14 +46,18 @@
   .form__input:hover + .form__icon {
     fill: var(--accent-color);
   }
-  .legend {
+  .form__legend {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     margin-bottom: 12px;
     letter-spacing: 0.03em;
     color: var(--tittle-text-color);
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
   }
   .form__input--comment {
     min-height: 120px;
@@ -65,9 +69,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 42px;
+    padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      padding-left: 42px;
+    }
   }
   .checkbox {
     /* appearance: none; */
@@ -83,7 +91,7 @@
   .checkbox__icon {
     position: absolute;
     top: 50%;
-    left: 13px;
+    left: 0px;
     transform: translateY(-50%);
     display: inline-block;
     fill: transparent;
@@ -94,6 +102,10 @@
     transition: fill var(--transition-param),
       background-color var(--transition-param),
       border-color var(--transition-param);
+
+    @media screen and (min-width: 1200px) {
+      left: 13px;
+    }
   }
   .checkbox:checked + .checkbox__icon {
     background-color: var(--accent-color);
@@ -104,13 +116,18 @@
     fill: var(--white-text-color);
   }
   .checkbox__text {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
   
-  .checkbox__link {
+  .checkbox__link {    
     margin-left: 6px;
     text-decoration: underline;
     color: var(--accent-color);

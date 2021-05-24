@@ -1,6 +1,33 @@
 .title {
-    color: var(--tittle-text-color);
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--tittle-text-color);
+
+  @media screen and (max-width: 1199.98px) {
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
   }
+}
+
+.hero__title {
+  max-width: 696px;
+  margin: 0 auto 40px auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36; 
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 26px;
+    line-height: 1.62;  
+    max-width: 360px;  }
+}
 
 .advantages__title {
   margin-bottom: 10px;
@@ -20,6 +47,11 @@
   text-transform: uppercase;
   color: var(--white-text-color);
   margin-bottom: 20px;
+
+  @media screen and (max-width: 1199.98px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .portfolio__title {

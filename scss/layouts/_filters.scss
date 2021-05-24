@@ -1,11 +1,29 @@
 .filters {
-  padding-bottom: 50px;
-  justify-content: center;
+  justify-content: start;
+  flex-wrap: wrap;
+
+  margin-top: -15px;
+  margin-left: -8px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    padding-bottom: 30px;
+  
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    padding-bottom: 50px;
+  }
 }
 
 .filters__button {
+  margin-top: 15px;
+  margin-left: 8px;  
   display: inline-block;
   padding: 6px 22px;
+  // margin-top: 27px;
   border: 1px solid transparent;
   border-radius: var(--btn-radius);
   min-height: 38px;
@@ -17,7 +35,6 @@
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
   background-color: var(--secondary-bg-color);
-  margin-right: 8px;
   transition: color var(--transition-param),
   background-color var(--transition-param), box-shadow var(--transition-param);
 
